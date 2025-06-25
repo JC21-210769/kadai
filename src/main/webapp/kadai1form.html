@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ 	<meta charset="UTF-8">
+ 	<title>消費税の計算</title>
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 	<header>
+ 		<h1>消費税の計算</h1>
+ 	</header>
+ 	<main>
+ 		<form method="post" action="keisan">
+ 			<div class="item">
+ 				<div class="leftside">
+ 					<label for="money">金額</label>
+ 			</div>
+ 			<div class="rightside">
+ 				<input type="number" name="money" id="money" style="text-align: right">
+ 			</div>
+ 		</div>
+ 		<div class="item">
+ 			<div class="leftside">
+ 				税率
+ 			</div>
+ 			<div class="rightside">
+ 				<label><input type="radio" name="rate" value="1">8%</label>
+ 				<label><input type="radio" name="rate" value="2">10%</label>
+ 			</div>
+ 		</div>
+ 		<div class="item">
+ 			<div class="leftside"></div>
+ 			<div class="rightside">
+ 				<button type="submit">送信</button>
+ 				<button type="reset">リセット</button>
+ 			</div>
+ 		</div>
+ 	</form>
+ </main>
+ <footer> </footer>
+</body>
+</html>
