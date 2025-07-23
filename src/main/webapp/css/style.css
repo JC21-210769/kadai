@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #336633;
+}
+
+h1 {
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.buttonArea {
+    margin: 10px auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridview {
+    width: 800px;
+    margin: 0 auto 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.item {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.item img {
+    display: block;
+    margin: 0 auto 8px auto;
+    max-width: 190px;
+    max-height: 150px;
+}
+
+.filename {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+    .gridview {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .item {
+        font-size: 4vw;
+    }
+
+    .filename {
+        font-size: 3.5vw;
+    }
+
+    .buttonArea {
+        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
